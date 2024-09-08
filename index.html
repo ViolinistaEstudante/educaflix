@@ -1,18 +1,29 @@
 <!DOCTYPE html>
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PobreFLix: Site de filmes</title>
+    <title>Educaflix: Seu site de filmes</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>PobreFLix: Site de filmes</h1>
+        <h1>Educaflix: Seu site de filmes</h1>
+        <nav>
+            <label for="genre-filter">Filtrar por gênero:</label>
+            <select id="genre-filter">
+                <option value="all">Todos</option>
+                <option value="action">Ação</option>
+                <option value="comedy">Comédia</option>
+                <option value="drama">Drama</option>
+            </select>
+        </nav>
     </header>
     <main>
-        <div id="movie-list"></div>
+        <div id="movie-list" class="movie-list">
+            <!-- Os filmes serão injetados aqui pelo JavaScript -->
+        </div>
     </main>
     <script src="script.js"></script>
 </body>
-</head>
 </html>
