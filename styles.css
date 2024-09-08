@@ -8,44 +8,61 @@ body {
 header {
     background-color: #333;
     color: #fff;
-    padding: 10px 0;
+    padding: 10px;
     text-align: center;
 }
 
-#movie-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+nav {
+    margin: 10px 0;
+}
+
+select {
+    padding: 5px;
+}
+
+main {
     padding: 20px;
 }
 
-.movie {
+.movie-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.movie-item {
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 5px;
-    margin: 10px;
-    padding: 10px;
+    overflow: hidden;
     width: 200px;
     text-align: center;
-    position: relative;
 }
 
-.movie img {
+.movie-item img {
     width: 100%;
-    border-radius: 5px;
+    height: auto;
 }
 
-.movie button {
-    background-color: #007BFF;
-    color: #fff;
+.movie-item h3 {
+    margin: 10px 0;
+}
+
+.movie-item p {
+    padding: 0 10px 10px;
+}
+
+button {
+    background-color: #007bff; 
+    color: #fff; /* Cor do texto */
     border: none;
     border-radius: 5px;
-    padding: 10px;
-    cursor: pointer;
-    margin-top: 10px;
+    padding: 10px 20px;
     font-size: 16px;
-}
+    cursor: pointer;
+    transition: background-color 0.3s ease,       transform 0.3s ease;
+  }
 
-.movie button:hover {
+button:hover {
     background-color: #0056b3;
-}
+    transform: scale(1.05);
